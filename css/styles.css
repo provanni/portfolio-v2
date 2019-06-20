@@ -1,0 +1,342 @@
+/* 
+    Mobile = Portrait Mode
+*/
+
+@media only screen and (orientation:portrait) {
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        background-image: url(../images/64521.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+    }
+    nav {
+        position: fixed;
+        font-size: 40px;
+        padding: 25px;
+        height: 500px;
+    }
+    nav>a {
+        display: inline-block;
+        top: 400px;
+        right: 0;
+        padding: 20px;
+        text-decoration: none;
+        color: black;
+        margin-top: 80px;
+        font-size: 50px;
+    }
+    a:visited {
+        color: gray;
+    }
+    #overlay {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 101%;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    #close {
+        position: fixed;
+        color: antiquewhite;
+        top: 10px;
+        right: 15px;
+        font-size: 70px;
+        z-index: 11;
+    }
+    #over-about, #over-resume, #over-contact {
+        position: fixed;
+        display: none;
+        color: antiquewhite;
+        font-size: 50px;
+        top: 500px;
+        left: 70px;
+    }
+    #previous {
+        color: antiquewhite;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        padding: 20px;
+        font-size: 200px;
+        background-color: blueviolet;
+        z-index: 11;
+    }
+    #previous::hover {
+        cursor: pointer;
+        background-color: pink;
+    }
+    #next {
+        color: antiquewhite;
+        position: fixed;
+        top: 100px;
+        right: 0;
+        padding: 20px;
+        font-size: 200px;
+        background-color: blueviolet;
+        z-index: 11;
+    }
+    #next::hover {
+        cursor: pointer;
+    }
+    #icon-open {
+        font-size: 50px;
+        position: fixed;
+        top: 25px;
+        left: 50px;
+    }
+    #icon-close {
+        font-size: 50px;
+        position: fixed;
+        bottom: 30px;
+        left: 50px;
+    }
+    #about {
+        position: fixed;
+        top: 450px;
+        margin: 50px;
+        width: 100%;
+    }
+    #about>h1 {
+        font-size: 8em;
+        padding: 0;
+        margin: 0;
+    }
+    #about>h2 {
+        font-size: 4em;
+        padding: 0;
+        margin: 0;
+    }
+    #about>h3 {
+        font-size: 3em;
+        margin-top: 100px;
+        font-weight: lighter;
+    }
+    footer {
+        position: fixed;
+        bottom: 55px;
+        font-size: 40px;
+    }
+    footer>a>i {
+        padding: 0 0 50px 50px;
+        font-size: 100px;
+    }
+}
+
+/* 
+  Mobile = Landscape Mode
+*/
+
+@media only screen and (max-device-width: 770px) and (orientation:landscape) {
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        background-image: url(../images/64521.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+    }
+    nav {
+        float: right;
+        font-size: 30px;
+        padding: 25px;
+    }
+    nav>a {
+        padding: 30px;
+        text-decoration: none;
+    }
+    /* a:visited {
+       color: gray;
+    }
+     */
+    #icon-open {
+        font-size: 40px;
+        position: fixed;
+        top: 25px;
+        left: 50px;
+    }
+    #icon-close {
+        font-size: 40px;
+        position: fixed;
+        bottom: 30px;
+        left: 50px;
+    }
+    #about {
+        position: fixed;
+        top: 100px;
+        margin: 50px;
+        width: 100%;
+    }
+    #about>h1 {
+        font-size: 4em;
+        padding: 0;
+        margin: 0;
+    }
+    #about>h2 {
+        font-size: 3em;
+        padding: 0;
+        margin: 0;
+    }
+    #about>h3 {
+        font-size: 2em;
+        margin-top: 50px;
+        font-weight: lighter;
+    }
+    footer {
+        position: fixed;
+        bottom: 30px;
+        left: 60%;
+        font-size: 40px;
+        width: 100%;
+    }
+    .icon {
+        padding: 0 0 0 50px;
+        font-size: 60px;
+    }
+    .icon:visited {
+        color: maroon;
+    }
+    /* footer > a > i{
+       padding: 0 0 0 50px;
+       font-size: 60px; 
+    } */
+}
+
+/* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+*/
+
+@media only screen and (min-device-width: 771px) and (max-device-width: 2700px) {
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        background-image: url(../images/64521.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+    }
+    nav {
+        float: right;
+        font-size: 30px;
+        padding: 25px;
+    }
+    nav>a {
+        padding: 30px;
+        text-decoration: none;
+    }
+    a {
+        color: gray;
+    }
+    a:visited {
+        color: gray;
+    }
+    .skill{
+        display: inline-block;
+        /* background-color: blue; */
+        padding: 5px;
+        height: 200px;
+        margin: 5px;
+        vertical-align: text-top;
+    }
+    #overlay {
+        display: none;
+        position: relative;
+        top: 150px;
+        left: 100px;
+        color: darkgray;
+    }
+    #close {
+        font-size: 2em;
+        width: 20px;
+    }
+    #close:hover {
+        cursor: pointer;
+    }
+    #over-about {
+        display: none;
+        font-size: 1.5em;
+        padding-left: 50px;
+    }
+    #over-skills {
+        display: none;
+        font-size: 1.5em;
+        padding-left: 50px;
+    }
+    #over-resume {
+        display: none;
+        font-size: 1.5em;
+        padding-left: 50px;
+    }
+    #over-projects{
+        display: none;
+        font-size: 1.5em;
+        padding-left: 50px;
+    }
+    #icon-open {
+        font-size: 40px;
+        position: fixed;
+        top: 25px;
+        left: 50px;
+    }
+    #icon-close {
+        font-size: 40px;
+        position: fixed;
+        bottom: 30px;
+        left: 50px;
+    }
+    #about {
+        position: fixed;
+        top: 100px;
+        margin: 50px;
+        width: 100%;
+    }
+    #about>h1 {
+        font-size: 4em;
+        padding: 0;
+        margin: 0;
+    }
+    #about>h2 {
+        font-size: 3em;
+        padding: 0;
+        margin: 0;
+    }
+    #about>h3 {
+        font-size: 2em;
+        margin-top: 50px;
+    }
+    footer {
+        position: fixed;
+        bottom: 30px;
+        left: 75%;
+        font-size: 40px;
+        width: 100%;
+    }
+    .icon {
+        padding: 0 0 0 50px;
+        font-size: 60px;
+    }
+    .icon:hover {
+        color: maroon;
+    }
+    .learn-more {
+        font-size: 2em;
+        font-weight: lighter;
+    }
+    .clickable {
+        text-decoration: none;
+        display: inline-block;
+    }
+    .clickable::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: maroon;
+        transition: width .3s;
+    }
+    .clickable:hover::after {
+        width: 70%;
+    }
+}

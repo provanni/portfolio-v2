@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <!-- 
+            TODO:
+            Create portrait and landsape layout
+            Host on google cloud platform
+            point my domain
+            create basic functionality
+         -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <a href="#about" class="clickable" id="nav-about">About</a>
+        <a href="#skills" class="clickable" id="nav-skills">Skills</a>
+        <a href="#resume" class="clickable" id="nav-resume">Resume</a>
+        <a href="#projects" class="clickable" id="nav-projects">Projects</a>
+    </nav>
+    <span id="icon-open">
+        <span class="fas fa-angle-left"></span>
+        <span>provan</span>
+        <span class="fas fa-angle-right"></span>
+    </span>
+
+    <div id="overlay">
+        <div id="close">X</div>
+        <!-- <span id="previous">
+                <
+            </span> -->
+        <div id="over-about">
+            <h3>Professional</h3>
+            Nicole is a current student at sheridan college.
+            <h3>Personal</h3>
+            Nicole enjoys video games.
+        </div>
+        <div id="over-skills">
+            <h3>SKILLS</h3>
+            <div class="skill">
+                <h3>Front-End</h3>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript and ES6</li>
+                    <li>jQuery</li>
+                    <li>Angular</li>
+                </ul>
+            </div>
+
+            <div class="skill">
+                <h3>DBMS</h3>
+                <ul>
+                    <li>mySQL</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h3>Back-End</h3>
+                <ul>
+                    <li>PHP</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h3>Other</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>Android Studio</li>
+                    <li>JSON</li>
+                </ul>
+            </div>
+        </div>
+        <div id="over-projects">
+            <h3>PROJECTS</h3>
+        </div>
+        <div id="over-resume">
+            <h3>RESUME</h3>
+        </div>
+        <!-- <span id="next">
+                >
+            </span> -->
+    </div>
+
+    <section id="about">
+        <!-- load about in pop up window for scroll for desktop version -->
+        <!-- mobile version is scroll through -->
+        <h1>Nicole Provan</h1>
+        <h2>JavaScript Developer</h2>
+        <h3 class="clickable" id="learn-more">Learn More</h3>
+    </section>
+
+
+
+
+
+    <footer>
+        <!-- Let's get in touch! <br> -->
+        <a href="mailto:provanni@sheridanc.on.ca"><i class="fas fa-envelope icon"></i></a>
+        <a href="https://www.linkedin.com/in/nicoleprovan/" target="_blank"><i class="fab fa-linkedin icon"></i></a>
+        <a href="https://github.com/provanni" target="_blank"><i class="fab fa-github icon"></i></a>
+        <br>
+        <span id="icon-close">
+            <span class="fas fa-angle-left"></span>
+            <span>/provan</span>
+            <span class="fas fa-angle-right"></span>
+        </span>
+
+    </footer>
+
+
+    <script src="js/master.js"></script>
+</body>
+
+</html>
